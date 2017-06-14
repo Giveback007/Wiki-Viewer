@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Wiki Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://use.fontawesome.com/a7ff91a450.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
+
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div style='min-height:1vh;'><div id='head-div' style='height:20vh; border-style: none;'></div></div>
+ 
+	<header class='row' style="width:300px; margin:auto;"> 
+		<div style='widht:100px; margin:auto;'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1134440/wikipedia-logotype-of-earth-puzzle_318-64683.png' style='width:100px'></div>
+		<div style='width:190px; margin: 10px auto 10px auto; text-align:center;'><h1>Quick Wiki</h1></div>
+	</header>
+
+	<div id='search-div' class='row' style='width:320px; margin:auto;'>
+		<div style='margin:auto'><form onSubmit='wikiAPI(search.value); return false;'>
+  			<input id='search'/> <button id='search-btn' type='submit'><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+			</form></div>
+		<div style='margin: 6px auto;'><a href='https://en.wikipedia.org/wiki/Special:Random' target='_blank'><button id='random'>feeling random?</button></a></div>
+	</div>
+
+	<div id='main-div'>
+ 		<div id='results-main-div'></div>
+	</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
